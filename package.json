@@ -1,0 +1,10 @@
+{
+  "name": "ai-history-page",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A single-page science website about the history of artificial intelligence.",
+  "scripts": {
+    "start": "python -m http.server 4173 --bind 0.0.0.0",
+    "preview": "python -m http.server 4173 --bind 127.0.0.1"
+  }
+}

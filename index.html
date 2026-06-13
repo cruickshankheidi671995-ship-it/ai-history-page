@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>人工智能的发展历史</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <canvas class="particle-field" id="particleField" aria-hidden="true"></canvas>
+  <div class="ambient ambient-a" aria-hidden="true"></div>
+  <div class="ambient ambient-b" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="返回顶部">
+      <span class="brand-mark"></span>
+      <span>AI Chronicle</span>
+    </a>
+    <nav class="nav-links" aria-label="页面导航">
+      <a href="#timeline">时间线</a>
+      <a href="#turning-points">关键转折</a>
+      <a href="#future">未来</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">From Logic to Large Models</p>
+        <h1>人工智能的发展历史</h1>
+        <p class="hero-lead">
+          从图灵关于“机器能否思考”的追问，到深度学习、大模型与智能体的涌现，人工智能的历史是一条由理论、算力、数据和想象力共同点亮的时间轴。
+        </p>
+        <div class="hero-actions" aria-label="页面操作">
+          <a class="primary-action" href="#timeline">探索时间线</a>
+          <a class="ghost-action" href="#turning-points">查看关键突破</a>
+        </div>
+      </div>
+
+      <div class="hero-orbit" aria-label="人工智能发展阶段视觉图">
+        <div class="core">
+          <span>AI</span>
+          <small>1950 - 未来</small>
+        </div>
+        <span class="orbit-label label-a">Logic</span>
+        <span class="orbit-label label-b">Data</span>
+        <span class="orbit-label label-c">Compute</span>
+        <span class="orbit-label label-d">Models</span>
+      </div>
+    </section>
+
+    <section class="stats-strip" aria-label="人工智能历史概览">
+      <article>
+        <strong>70+</strong>
+        <span>年理论与产业演进</span>
+      </article>
+      <article>
+        <strong>3</strong>
+        <span>次浪潮与两次低谷</span>
+      </article>
+      <article>
+        <strong>2020s</strong>
+        <span>进入大模型与生成式AI时代</span>
+      </article>
+    </section>
+
+    <section class="section intro-section">
+      <div class="section-heading">
+        <p class="eyebrow">Historical Context</p>
+        <h2>AI并不是突然出现的奇迹</h2>
+      </div>
+      <div class="intro-grid">
+        <p>
+          人工智能的发展从来不是单一技术的直线进步。它经历过符号主义的雄心、专家系统的商业化、统计学习的复兴、深度神经网络的爆发，也经历过资金退潮和公众失望。
+        </p>
+        <p>
+          每一次跃迁背后，都有三股力量共同作用：更强的计算能力、更丰富的数据资源，以及更有效的算法结构。当三者在某个时代相遇，AI就会迎来新的加速。
+        </p>
+      </div>
+    </section>
+
+    <section class="section timeline-section" id="timeline">
+      <div class="section-heading center">
+        <p class="eyebrow">Timeline</p>
+        <h2>从早期理论到大模型时代</h2>
+      </div>
+
+      <div class="timeline">
+        <article class="timeline-card">
+          <span class="year">1943 - 1956</span>
+          <h3>思想起点：机器智能被正式想象</h3>
+          <p>麦卡洛克与皮茨提出人工神经元模型，图灵测试让“机器能否思考”成为可讨论的问题。1956年达特茅斯会议上，“人工智能”这个名称正式登场。</p>
+        </article>
+        <article class="timeline-card">
+          <span class="year">1957 - 1973</span>
+          <h3>第一次浪潮：符号主义与早期乐观</h3>
+          <p>感知机、逻辑推理程序和早期自然语言系统相继出现。研究者相信，只要把知识和规则写清楚，机器就能表现出智能。</p>
+        </article>
+        <article class="timeline-card">
+          <span class="year">1974 - 1980</span>
+          <h3>第一次低谷：AI寒冬降临</h3>
+          <p>现实任务远比实验室问题复杂，算力不足、数据稀缺、承诺过高导致资助收缩，人工智能进入第一次寒冬。</p>
+        </article>
+        <article class="timeline-card">
+          <span class="year">1980s</span>
+          <h3>专家系统：知识工程的商业化</h3>
+          <p>专家系统在医疗、金融、工业诊断等场景落地，通过规则库模拟专家决策，AI第一次大规模进入企业应用。</p>
+        </article>
+        <article class="timeline-card">
+          <span class="year">1990s - 2000s</span>
+          <h3>统计学习：让数据自己说话</h3>
+          <p>机器学习、概率模型、支持向量机、搜索算法快速发展。1997年“深蓝”战胜国际象棋世界冠军，展示了专用智能的力量。</p>
+        </article>
+        <article class="timeline-card">
+          <span class="year">2012 - 2016</span>
+          <h3>深度学习爆发：神经网络重回中心</h3>
+          <p>AlexNet在图像识别中取得突破，GPU、海量数据与深层网络结合，语音识别、计算机视觉和机器翻译迎来巨大提升。</p>
+        </article>
+        <article class="timeline-card">
+          <span class="year">2017 - 2021</span>
+          <h3>Transformer：通向基础模型的架构</h3>
+          <p>Transformer架构改变了序列建模方式，预训练模型成为主流。BERT、GPT等模型让语言理解与生成能力持续刷新边界。</p>
+        </article>
+        <article class="timeline-card">
+          <span class="year">2022 - Now</span>
+          <h3>大模型时代：生成式AI进入大众生活</h3>
+          <p>对话式AI、图像生成、代码助手和多模态模型进入普通用户的日常。AI从后台工具变成可以直接协作的数字伙伴。</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section breakthrough-section" id="turning-points">
+      <div class="section-heading">
+        <p class="eyebrow">Turning Points</p>
+        <h2>推动AI跃迁的四个关键变量</h2>
+      </div>
+      <div class="breakthrough-grid">
+        <article class="glass-card">
+          <span class="card-index">01</span>
+          <h3>算法结构</h3>
+          <p>从符号规则到神经网络，从卷积网络到Transformer，算法结构决定了机器如何表示世界与处理信息。</p>
+        </article>
+        <article class="glass-card">
+          <span class="card-index">02</span>
+          <h3>计算能力</h3>
+          <p>GPU、云计算和专用AI芯片让更深、更大的模型成为可能，训练速度和推理能力也因此被不断推高。</p>
+        </article>
+        <article class="glass-card">
+          <span class="card-index">03</span>
+          <h3>数据规模</h3>
+          <p>互联网、传感器和数字化工作流产生了前所未有的数据资源，使模型能够从海量样本中提取模式。</p>
+        </article>
+        <article class="glass-card">
+          <span class="card-index">04</span>
+          <h3>应用反馈</h3>
+          <p>搜索、推荐、自动驾驶、医疗辅助、内容生成等真实场景持续反馈问题，让AI从实验室走向社会系统。</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section era-map">
+      <div class="era-panel">
+        <div>
+          <p class="eyebrow">Three Eras</p>
+          <h2>三种AI范式的交替</h2>
+        </div>
+        <div class="era-bars" aria-label="人工智能三种范式">
+          <div class="era-row">
+            <span>符号主义</span>
+            <div class="bar"><i style="width: 46%"></i></div>
+            <strong>规则与逻辑</strong>
+          </div>
+          <div class="era-row">
+            <span>统计学习</span>
+            <div class="bar"><i style="width: 68%"></i></div>
+            <strong>数据与概率</strong>
+          </div>
+          <div class="era-row">
+            <span>基础模型</span>
+            <div class="bar"><i style="width: 92%"></i></div>
+            <strong>规模与涌现</strong>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section future-section" id="future">
+      <div class="future-card">
+        <p class="eyebrow">Next Chapter</p>
+        <h2>未来的AI，将从“工具”走向“协作系统”</h2>
+        <p>
+          接下来的AI发展不会只看模型参数大小，而会更关注可靠性、可解释性、多模态理解、个性化协作以及与真实世界的连接。它可能成为科学研究、教育、医疗、设计和工程中的基础设施。
+        </p>
+        <div class="future-tags" aria-label="未来方向">
+          <span>多模态智能</span>
+          <span>AI Agent</span>
+          <span>具身智能</span>
+          <span>可信AI</span>
+          <span>人机协作</span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <span>人工智能的发展历史</span>
+    <span>一页读懂AI的过去、现在与未来</span>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
